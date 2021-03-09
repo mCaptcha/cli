@@ -4,7 +4,7 @@
     <strong>mCaptcha - PoW based DoS protection</strong>
   </p>
 
-[![Documentation](https://img.shields.io/badge/docs-master-blue)](https://mcaptcha.github.io/mCaptcha/cli/index.html)
+[![Documentation](https://img.shields.io/badge/docs-master-blue)](https://mcaptcha.github.io/mCaptcha/mcaptcha_cli/index.html)
 ![CI (Linux)](<https://github.com/mCaptcha/cli/workflows/CI%20(Linux)/badge.svg>)
 [![dependency status](https://deps.rs/repo/github/mCaptcha/cli/status.svg)](https://deps.rs/repo/github/mCaptcha/cli)
 <br />
