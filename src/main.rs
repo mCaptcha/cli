@@ -1,9 +1,5 @@
 use clap::{App, Arg};
-use pow_sha256::PoW;
-// use serde::Serialize;
-
-//#[derive(Serialize, Debug)]
-//pub struct Pow(PoW<Vec<u8>>);
+use pow_sha256::ConfigBuilder;
 
 fn main() {
     let matches = App::new("mCaptcha PoW CLI")
@@ -11,11 +7,19 @@ fn main() {
         .author("Aravinth Manivannan <realaravinth@batsense.net>")
         .about("Generates PoW for mCaptcha")
         .arg(
-            Arg::with_name("secret")
+            Arg::with_name("salt")
                 .short("-s")
-                .long("--secret")
+                .long("--salt")
                 .value_name("STRING")
-                .help("Secret over which PoW should be computed")
+                .help("Salt with which PoW should be computed")
+                .takes_value(true),
+        )
+        .arg(
+            Arg::with_name("phrase")
+                .short("-p")
+                .long("--phrase")
+                .value_name("STRING")
+                .help("Phrase over which PoW should be computed")
                 .takes_value(true),
         )
         .arg(
@@ -27,22 +31,20 @@ fn main() {
                 .takes_value(true),
         )
         .get_matches();
-    let secret = matches.value_of("secret").unwrap();
+    let phrase = matches.value_of("phrase").unwrap();
+    let salt = matches.value_of("salt").unwrap();
     let difficulty_factor: u128 = matches
         .value_of("difficulty_factor")
         .unwrap()
         .parse()
         .expect("Please enter an integer for difficulty");
 
-    let difficulty = u128::max_value() - u128::max_value() / difficulty_factor as u128;
+    let config = ConfigBuilder::default().salt(salt.into()).build().unwrap();
 
-    let a = PoW::prove_work(&secret.as_bytes().to_vec(), difficulty).unwrap();
+    let work = config.prove_work(&phrase, difficulty_factor).unwrap();
 
-    println!("difficulty: {}", &difficulty);
-    println!("nonce: {}", &a.nonce);
-    println!("result: {}", &a.result);
-
-    // let payload = serde_json::to_string(&pow(a)).unwrap();
-    //    let b = pow(a);
-    //    println!("{:#?}", serde_json::to_string(&b).unwrap());
+    println!("difficulty: {}", &difficulty_factor);
+    println!("nonce: {}", &work.nonce);
+    println!("original phrase: {}", &phrase);
+    println!("result: {}", &work.result);
 }

@@ -20,7 +20,7 @@ Aravinth Manivannan <realaravinth@batsense.net>
 Generates PoW for mCaptcha
 
 USAGE:
-    cli [OPTIONS]
+    mcaptcha-cli [OPTIONS]
 
 FLAGS:
     -h, --help       Prints help information
@@ -28,5 +28,6 @@ FLAGS:
 
 OPTIONS:
     -d, --difficulty <INTEGER>    Difficulty factor
-    -s, --secret <STRING>         Secret over which PoW should be computed
+    -p, --phrase <STRING>         Phrase over which PoW should be computed
+    -s, --salt <STRING>           Salt with which PoW should be computed
 ```
