@@ -33,16 +33,14 @@ fn main() {
         .get_matches();
     let phrase = matches.value_of("phrase").unwrap();
     let salt = matches.value_of("salt").unwrap();
-    let difficulty_factor: u128 = matches
+    let difficulty_factor: u32 = matches
         .value_of("difficulty_factor")
         .unwrap()
         .parse()
         .expect("Please enter an integer for difficulty");
 
     let config = ConfigBuilder::default().salt(salt.into()).build().unwrap();
-
     let work = config.prove_work(&phrase, difficulty_factor).unwrap();
-
     println!("difficulty: {}", &difficulty_factor);
     println!("nonce: {}", &work.nonce);
     println!("original phrase: {}", &phrase);
