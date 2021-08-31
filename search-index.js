@@ -1,4 +1,4 @@
 var searchIndex = JSON.parse('{\
-"mcaptcha_cli":{"doc":"","i":[[5,"main","mcaptcha_cli","",null,[[]]]],"p":[]}\
+"mcaptcha_cli":{"doc":"","t":[5],"n":["main"],"q":["mcaptcha_cli"],"d":[""],"i":[0],"f":[[[]]],"p":[]}\
 }');
-addSearchOptions(searchIndex);initSearch(searchIndex);
+if (window.initSearch) {window.initSearch(searchIndex)};
