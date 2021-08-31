@@ -1,0 +1,100 @@
+factor = 50000
+
+[*] factor: 1 difficulty: 	50000
+real	0m0.040s
+user	0m0.040s
+sys	0m0.000s
+
+[*] factor: 6 difficulty: 	300000
+real	0m0.122s
+user	0m0.122s
+sys	0m0.000s
+
+[*] factor: 11 difficulty: 	550000
+real	0m0.124s
+user	0m0.119s
+sys	0m0.003s
+
+[*] factor: 16 difficulty: 	800000
+real	0m0.123s
+user	0m0.118s
+sys	0m0.003s
+
+[*] factor: 21 difficulty: 	1050000
+real	0m0.933s
+user	0m0.932s
+sys	0m0.000s
+
+[*] factor: 26 difficulty: 	1300000
+user	0m1.227s
+sys	0m0.007s
+
+[*] factor: 31 difficulty: 	1550000
+real	0m1.260s
+user	0m1.256s
+sys	0m0.003s
+
+[*] factor: 36 difficulty: 	1800000
+real	0m1.243s
+user	0m1.242s
+sys	0m0.000s
+
+[*] factor: 41 difficulty: 	2050000
+real	0m2.524s
+user	0m2.510s
+sys	0m0.000s
+
+[*] factor: 46 difficulty: 	2300000
+real	0m2.545s
+user	0m2.543s
+sys	0m0.000s
+
+[*] factor: 51 difficulty: 	2550000
+real	0m2.561s
+user	0m2.551s
+sys	0m0.004s
+
+[*] factor: 56 difficulty: 	2800000
+real	0m2.555s
+user	0m2.540s
+sys	0m0.006s
+
+[*] factor: 61 difficulty: 	3050000
+real	0m2.513s
+user	0m2.508s
+sys	0m0.000s
+
+[*] factor: 66 difficulty: 	3300000
+real	0m2.484s
+user	0m2.481s
+sys	0m0.000s
+
+[*] factor: 71 difficulty: 	3550000
+real	0m2.643s
+user	0m2.642s
+sys	0m0.000s
+
+[*] factor: 76 difficulty: 	3800000
+real	0m2.663s
+user	0m2.661s
+sys	0m0.000s
+
+[*] factor: 81 difficulty: 	4050000
+real	0m2.663s
+user	0m2.660s
+sys	0m0.000s
+
+[*] factor: 86 difficulty: 	4300000
+real	0m2.689s
+user	0m2.683s
+sys	0m0.004s
+
+[*] factor: 91 difficulty: 	4550000
+real	0m2.688s
+user	0m2.686s
+sys	0m0.000s
+
+[*] factor: 96 difficulty: 	4800000
+real	0m2.517s
+user	0m2.509s
+sys	0m0.003s

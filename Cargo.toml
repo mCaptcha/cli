@@ -6,5 +6,5 @@ license = "AGPL-3.0"
 edition = "2018"
 
 [dependencies]
-pow_sha256 = { version = "0.2.1", git = "https://github.com/mCaptcha/pow_sha256", tag="0.2.1"}
+pow_sha256 = { version = "0.2.1", git = "https://github.com/mCaptcha/pow_sha256" }
 clap = "2.33"
