@@ -1,3 +1,4 @@
-var N = null;var sourcesIndex = {};
-sourcesIndex["mcaptcha_cli"] = {"name":"","files":["main.rs"]};
+var sourcesIndex = JSON.parse('{\
+"mcaptcha_cli":["",[],["main.rs"]]\
+}');
 createSourceSidebar();
