@@ -1,5 +1,5 @@
 var searchIndex = JSON.parse('{\
-"mcaptcha_cli":{"doc":"","t":[5],"n":["main"],"q":["mcaptcha_cli"],"d":[""],"i":[0],"f":[[[]]],"p":[]}\
+"mcaptcha_cli":{"doc":"","t":"DLLLLLLMLLLLLLFMMLLLLL","n":["Args","augment_args","augment_args_for_update","borrow","borrow_mut","command","command_for_update","difficulty_factor","fmt","from","from_arg_matches","from_arg_matches_mut","group_id","into","main","phrase","salt","try_from","try_into","type_id","update_from_arg_matches","update_from_arg_matches_mut"],"q":[[0,"mcaptcha_cli"]],"d":["Simple program to greet a person","","","","","","","Difficulty Factor","","Returns the argument unchanged.","","","","Calls <code>U::from(self)</code>.","","Phrase over which PoW should be computed","Salt with which PoW should be computed","","","","",""],"i":[0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2],"f":[0,[1,1],[1,1],[[]],[[]],[[],1],[[],1],0,[[2,3],4],[[]],[5,[[7,[2,6]]]],[5,[[7,[2,6]]]],[[],[[9,[8]]]],[[]],[[]],0,0,[[],7],[[],7],[[],10],[[2,5],[[7,[6]]]],[[2,5],[[7,[6]]]]],"c":[],"p":[[3,"Command"],[3,"Args"],[3,"Formatter"],[6,"Result"],[3,"ArgMatches"],[6,"Error"],[4,"Result"],[3,"Id"],[4,"Option"],[3,"TypeId"]]}\
 }');
 if (typeof window !== 'undefined' && window.initSearch) {window.initSearch(searchIndex)};
 if (typeof exports !== 'undefined') {exports.searchIndex = searchIndex};
