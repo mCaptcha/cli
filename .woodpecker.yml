@@ -1,0 +1,20 @@
+pipeline:
+  build_docker_img:
+    image: plugins/docker
+    when:
+      event: [pull_request]
+    settings:
+      dry_run: true
+      repo: mcaptcha/cli
+      tags: latest
+
+  build_and_publish_docker_img:
+    image: plugins/docker
+    when:
+      event: [push, tag, deployment]
+    settings:
+      username: mcaptcha
+      password:
+        from_secret: DOCKER_TOKEN
+      repo: mcaptcha/cli
+      tags: latest
