@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2023 Aravinth Manivannan <realaravinth@batsense.net>
+#
+# SPDX-License-Identifier: MIT
+
 set -xEeuo  pipefail
 readonly UPLOAD_DIR="cli/master"
 readonly DUMBSERVE_HOST="https://$DUMBSERVE_USERNAME:$DUMBSERVE_PASSWORD@dl.mcaptcha.org"

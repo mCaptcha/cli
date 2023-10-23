@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: 2023 Aravinth Manivannan <realaravinth@batsense.net>
+#
+# SPDX-License-Identifier: MIT
+
 set -xEeuo  pipefail
 
 GPG_TTY=$(tty)
@@ -11,7 +15,7 @@ pack() {
 	
 
 	cp README.md  $SRC
-	cp LICENSE.md $SRC
+	cp -r ./LICENSES/ $SRC
 	tar -cvzf $TARBALL $SRC
 	gpg --verbose \
 		--pinentry-mode loopback \
