@@ -2,3 +2,5 @@
 tarpaulin-report.html
 .env
 out
+dist/
+build/
