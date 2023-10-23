@@ -6,8 +6,8 @@
 use std::time::Instant;
 
 use clap::*;
-use pow_sha256::ConfigBuilder;
-use pow_sha256::PoW;
+use mcaptcha_pow_sha256::ConfigBuilder;
+use mcaptcha_pow_sha256::PoW;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
 use url::Url;
